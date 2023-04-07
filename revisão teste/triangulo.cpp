@@ -21,7 +21,7 @@ int main (){
   // imprime o triangulo invertido:
    for (int i=iN;i>=0;i--)//colunas
   {
-    for (int j=i;j>=0;j--)//linhas
+    for (int j=i-1;j>=0;j--)//linhas
     {
         cout<<"#" ;
     } cout<<endl;
