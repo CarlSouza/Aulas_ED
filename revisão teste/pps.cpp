@@ -39,6 +39,7 @@ int jogada(string jog1, string jog2) {
         return 2;
     }
 }
+//função dentro de um loop para uma melhor de 3:
 
 int main() {
     int placar1 = 0;
