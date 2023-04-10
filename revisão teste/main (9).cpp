@@ -50,6 +50,7 @@ int cubo(int*ptrNum )
     return -42;
 }*/ // não podemos fazer isso
 
+
 int somaVetor(const int* valores,const size_t tamVetor)
 {
    return -42;
