@@ -1,10 +1,4 @@
-/******************************************************************************
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
 
 #include <iostream>
 
@@ -28,6 +22,6 @@ int is_prime(int n) {
 int main() {
     int n;
     std::cin >> n;
-    std::cout << is_prime(n) << std::endl;
+    std::cout << is_prime(n) << std::endl;// por padrão sempre retornar verdadeiro
     return 0;
 }
