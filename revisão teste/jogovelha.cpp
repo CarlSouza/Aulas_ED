@@ -1,4 +1,4 @@
-// tempo de jogo:
+// jogo da velha
 
 #include <iostream>
 #include <cmath>
