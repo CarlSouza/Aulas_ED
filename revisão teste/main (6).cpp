@@ -11,19 +11,16 @@ using std::string;
 
 // josefo :usando recursão
 
-int josephus(int n, int k)
+int josephus(int n, int k)//n-soldados ,k-esima morte
 {
     if (n == 1)
         return 1;
     else
-        /* The position returned by josephus(n - 1, k)
-        is adjusted because the recursive call
-        josephus(n - 1, k) considers the
-        original position k % n + 1 as position 1 */
+        
         return (josephus(n - 1, k) + k - 1) % n + 1;
 }
  
-// Driver Program to test above function
+// Dtestando a função
 int main()
 {
     cout << "O vencedor é  " << josephus(40, 2)<<endl;
