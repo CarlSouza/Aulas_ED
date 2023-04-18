@@ -1,5 +1,24 @@
 // Lista encadea 1
 #include<iostream>
+/*
+struct Node
+{ 
+   int Data;
+   Node *next;
+ };
+ Typedef Node* nodePtr;
+ 
+ int Main()
+ {
+   notePrt head;
+   head=headNode;
+   headNode -> data=20;// iniciar
+   head ->next=NULL   
+ }
+ 
+ 
+
+*/
 
 using std::cout;
 using std::cin;
