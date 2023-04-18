@@ -1,5 +1,5 @@
 // Lstruct : criar tipos part1
-//metodos funções
+//metodos funções part2
 
 
 #include<iostream>
