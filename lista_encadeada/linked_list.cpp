@@ -1,6 +1,6 @@
 // Lista encadea 1
 #include<iostream>
-// dados do aluno ,matricula, nome nota proximo
+
 using std::cout;
 using std::cin;
 using std::string;
