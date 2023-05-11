@@ -3,8 +3,8 @@
 // printar um nó
 // adicionar elementos 
 //remover
-// remover de qualquer posição
 //trocar de posição
+//acessar algum nó em especifico
 
 #include <iostream>
 // criar a Lista:( datos:informações  e um  ponteiro)
@@ -23,8 +23,6 @@ void pop(struct Node*);
 void RemoveAt(struct Node* , int );
 // adiconar, em qualquer posição ,recebe o nó , a posição e valor a ser adcionado
 void Add(struct Node*,int ,int);
-// trocar a posição de dois nós
-void SwapNodes(struct Node*  ,int, int);
 
 
 
@@ -178,75 +176,5 @@ void RemoveAt(struct Node* head, int position)
     previousNode->Next = currentNode->Next;
     free(currentNode);
 }
-// trocar a posição de dois nós
-void SwapNodes(struct Node* head, int position1, int position2)
-{
-    if (head == nullptr)
-    {
-        cout << "A lista está vazia." << endl;
-        return;
-    }
-
-    if (position1 == position2)
-    {
-        cout << "As posições são iguais. Não há troca a ser feita." << endl;
-        return;
-    }
-
-    struct Node* node1 = head;
-    struct Node* previousNode1 = nullptr;
-    struct Node* node2 = head;
-    struct Node* previousNode2 = nullptr;
-
-    // Encontrar os nós e seus nós anteriores
-    int currentPosition = 1;
-    while (node1 != nullptr && currentPosition < position1)
-    {
-        previousNode1 = node1;
-        node1 = node1->Next;
-        currentPosition++;
-    }
-
-    currentPosition = 1;
-    while (node2 != nullptr && currentPosition < position2)
-    {
-        previousNode2 = node2;
-        node2 = node2->Next;
-        currentPosition++;
-    }
-
-    // Verificar se as posições estão além do tamanho da lista
-    if (node1 == nullptr || node2 == nullptr)
-    {
-        cout << "Uma ou ambas as posições estão além do tamanho da lista." << endl;
-        return;
-    }
-
-    // Caso especial: trocar o primeiro nó
-    if (previousNode1 == nullptr)
-    {
-        head = node2;
-    }
-    else
-    {
-        previousNode1->Next = node2;
-    }
-
-    if (previousNode2 == nullptr)
-    {
-        head = node1;
-    }
-    else
-    {
-        previousNode2->Next = node1;
-    }
-
-    // Trocar os ponteiros Next dos nós
-    struct Node* temp = node2->Next;
-    node2->Next = node1->Next;
-    node1->Next = temp;
-}
-
-
 
 
