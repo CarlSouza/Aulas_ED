@@ -10,8 +10,8 @@
 // criar a Lista:( datos:informações  e um  ponteiro)
 struct Node
 {
-  int iData;
-  struct Node* Next;
+  int iData;// datos informações
+  struct Node* Next;// um ponteiro que aponta para o proximo elemento
 };
 // printar a lista, recebe o nó como parametro
 void printList(struct Node*);
@@ -69,7 +69,7 @@ void printList(struct Node* no)
 {
     while (no !=nullptr)
     {
-        cout<<"Dado do nó "<<no->iData<<endl;
+        cout<<"Dado do nó "<<no->iData<<endl;// nó acessa os dados
         no=no->Next; //atualiza o ponteiro "no" para apontar para o próximo elemento da lista encadeada
     }
 }
